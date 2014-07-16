@@ -59,3 +59,15 @@ github "xquartz",     "1.1.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "atom",		      "1.0.0"
+github "chrome",              "1.1.2"
+github "evernote",            "2.0.5"
+github "heroku",              "2.1.1"
+#github "intellij",            "1.5.1"
+github "java",                "1.5.0"
+github "osx",                 "2.7.0"
+github "vagrant",             "3.0.9"
+github "virtualbox",          "1.0.11"
+github "quicksilver",         "1.3.0"
+github "keepassx",            "1.0.0", :repo => "danmikita/puppet-keepassx"

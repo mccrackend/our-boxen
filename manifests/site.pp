@@ -58,6 +58,15 @@ node default {
   include hub
   include nginx
 
+  # custom modules
+  include chrome
+  include atom
+  include evernote
+  include heroku
+  include java
+  include vagrant
+  include virtualbox
+
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
@@ -80,12 +89,18 @@ node default {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+      'maven'
     ]:
   }
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir
+  }
+
+  package { 'git-flow':
+      ensure => present,
+      provider => homebrew
   }
 }
