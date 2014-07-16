@@ -14,7 +14,7 @@ class people::mccrackend {
 	# Applications
 	include quicksilver
 	include evernote
-	include intellij
+	#include intellij
 	include keepassx
 	include atom
 
