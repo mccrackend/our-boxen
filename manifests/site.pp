@@ -90,7 +90,9 @@ node default {
       'ack',
       'findutils',
       'gnu-tar',
-      'maven'
+      'maven',
+      'go',
+      'mercurial'
     ]:
   }
 
