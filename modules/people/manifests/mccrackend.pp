@@ -17,6 +17,7 @@ class people::mccrackend {
 	#include intellij
 	include keepassx
 	include atom
+	include mongodb
 
 	# OSX Settings
 	include osx::disable_app_quarantine

@@ -92,17 +92,13 @@ node default {
       'gnu-tar',
       'maven',
       'go',
-      'mercurial'
+      'mercurial',
+      'git-flow'
     ]:
   }
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir
-  }
-
-  package { 'git-flow':
-      ensure => present,
-      provider => homebrew
   }
 }
