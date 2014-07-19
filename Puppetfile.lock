@@ -76,7 +76,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (3.7.0)
+    nodejs (3.8.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -139,6 +139,11 @@ GITHUBTARBALL
     keepassx (1.0.0)
 
 GITHUBTARBALL
+  remote: newtriks/puppet-meteorjs
+  specs:
+    meteorjs (1.0.5)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.0.3)
@@ -169,10 +174,11 @@ DEPENDENCIES
   inifile (= 1.0.3)
   java (= 1.5.0)
   keepassx (= 1.0.0)
+  meteorjs (= 1.0.5)
   module-data (= 0.0.3)
   mongodb (= 2.6.1)
   nginx (= 1.4.3)
-  nodejs (= 3.7.0)
+  nodejs (= 3.8.1)
   openssl (= 1.0.0)
   osx (= 2.7.0)
   phantomjs (= 2.3.0)
