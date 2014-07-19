@@ -77,6 +77,13 @@ node default {
   include nodejs::v0_8
   include nodejs::v0_10
 
+  # install some npm modules
+  nodejs::module { 'express':
+    node_version => 'v0.10'
+  }
+
+  include meteorjs
+
   # default ruby versions
   ruby::version { '1.9.3': }
   ruby::version { '2.0.0': }
